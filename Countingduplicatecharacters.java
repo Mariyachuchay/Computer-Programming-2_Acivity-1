@@ -1,0 +1,28 @@
+package Ma.PatriciaFelicidarioCountingduplicatecharacters;
+
+public class Countingduplicatecharacters {
+
+  public static void main(String[] args) {
+  System.out.print("Countingduplicatecharacters");
+String string1 = "Patricia"; 
+     int count;  
+          
+ char string[] = string1.toCharArray();  
+          
+  System.out.println("Duplicate characters in a given string: ");  
+  System.out.println();
+          
+   for(int i = 0; i <string.length; i++) 
+   {  
+  count = 1;  
+  for(int j = i+1; j<string.length; j++)               {  
+     if(string[i] == string[j]&& string[i] != ' ') {  
+                    count++;  
+                    
+  string[j] ='0';  
+                }  
+            }  
+            
+      
+  }
+}}
